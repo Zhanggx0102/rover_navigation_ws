@@ -128,6 +128,10 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+add_executable(sendGoals src/sendGoals.cpp)
+target_link_libraries(sendGoals ${catkin_LIBRARIES})
+
+
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/rover_navigation.cpp
